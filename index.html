@@ -8,6 +8,40 @@
     <title>Image Capture</title>
 </head>
 <body>
+    <header class="header">
+        <h1 class="heading-primary">Image Capture</h1>
+    </header>
+    <div class="container">
+        <div class="preview">
+            <img src="img/preview.jpg" alt="Image" class="preview__img">
+        </div>
+        <div class="control">
+            <form action="" class="control__form form">
+                <div class="form__group control__group">
+                    <label for="exponum" class="control__label form__label">Number of Exposures</label>
+                    <input type="number" id="exponum" class="control__input form__input" name="exponum" placeholder="Number of Exposures">
+                </div>
+                
+                <div class="form__group control__group">
+                    <label for="exponum" class="control__label form__label">Exposure Length</label>
+                    <input type="number" id="expolen" class="control__input form__input" name="expolen" placeholder="Exposure Length">
+                </div>
+                
+                <div class="form__group control__group">
+                    <label for="exponum" class="control__label form__label">ISO Speed</label>
+                    <select name="iso" id="iso" class="control__select form__select">
+                        <option value="100">100</option>
+                        <option value="100">200</option>
+                        <option value="100">400</option>
+                        <option value="100">800</option>
+                        <option value="100">1600</option>
+                        <option value="100">3200</option>
+                        <option value="100">6400</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
