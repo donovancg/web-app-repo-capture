@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Image Capture</title>
 </head>
@@ -31,18 +32,34 @@
                     <label for="exponum" class="control__label form__label">ISO Speed</label>
                     <select name="iso" id="iso" class="control__select form__select">
                         <option value="100">100</option>
-                        <option value="100">200</option>
-                        <option value="100">400</option>
-                        <option value="100">800</option>
-                        <option value="100">1600</option>
-                        <option value="100">3200</option>
-                        <option value="100">6400</option>
+                        <option value="200">200</option>
+                        <option value="400">400</option>
+                        <option value="800">800</option>
+                        <option value="1600">1600</option>
+                        <option value="3200">3200</option>
+                        <option value="6400">6400</option>
                     </select>
                 </div>
+                <input type="submit" value="Begin Shoot" id="submit" name="submit" class="control__submit form__submit">
+                <div class="status status--remaining">1h, 20m, 0s remaining.</div>
+                <div class="status status--elapsed">0h, 0m, 0s elapsed.</div>
             </form>
         </div>
     </div>
-    
+    <div class="icon-bar">
+        <i class="icon-bar__icon icon-bar__settings fas fa-cog"></i>
+    </div>
+    <div class="settings">
+        <div class="settings__popup">
+            <h2 class="settings__heading">Settings</h2>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
+
+<!--
+SETTINGS
+    file-name?
+    save location?
+-->
